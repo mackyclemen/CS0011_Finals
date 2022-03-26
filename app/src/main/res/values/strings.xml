@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Finals Project</string>
     <string name="about">About</string>
+    <string name="extended_fab_content_desc">New Action</string>
+    <string name="extended_fab_new_action">New Action</string>
+
+    <string name="key_calculate">grade_calculation</string>
+    <string name="main_menu_conversion">Grade Conv. Table</string>
+    <string name="conversion_toolbar_title">Grade Conversion Table</string>
+    <string name="about_toolbar_title">About Finals Project</string>
+    <string name="result_toolbar_title">Your Result</string>
 </resources>

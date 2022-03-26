@@ -10,11 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalsProject">
         <activity
+            android:name=".ConversionActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".AboutActivity"
-            android:exported="false">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:exported="false"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -25,5 +41,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
