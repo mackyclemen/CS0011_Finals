@@ -9,4 +9,14 @@
     <string name="conversion_toolbar_title">Grade Conversion Table</string>
     <string name="about_toolbar_title">About Finals Project</string>
     <string name="result_toolbar_title">Your Result</string>
+    <string name="current_general_weighted_average">Current General Weighted Average:</string>
+    <string name="_0_00">0.00</string>
+    <string name="you_are_doing_great">You are doing great!</string>
+    <string name="excelsior">EXCELSIOR</string>
+    <string name="bisnan_aerhiel_dhenhice">Bisnan, Aerhiel Dhenhice</string>
+    <string name="clemen_marc_steven">Clemen, Marc Steven</string>
+    <string name="ignacio_janah_reginna">Ignacio, Janah Reginna</string>
+    <string name="lacbain_jannel">Lacbain, Jannel</string>
+    <string name="bonus_roland_val_tristan">Bonus, Roland Val Tristan</string>
+    <string name="group_icon">group icon</string>
 </resources>
