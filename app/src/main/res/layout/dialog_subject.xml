@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/padding_vertical"
+    android:paddingHorizontal="@dimen/padding_horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/subject_name_field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject_name_field_hint"
+        android:importantForAutofill="no">
+
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/subject_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/subject_units_field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject_units_field_hint"
+        android:importantForAutofill="no">
+
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/subject_units_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/subject_grade_field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject_grade_field"
+        android:importantForAutofill="no">
+
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/subject_grade_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
