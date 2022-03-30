@@ -1,16 +1,20 @@
 <resources>
     <string name="app_name">Finals Project</string>
-    <string name="about">About</string>
-    <string name="extended_fab_content_desc">New Action</string>
-    <string name="extended_fab_new_action">New Action</string>
+    <string name="main_menu_about">About</string>
 
-    <string name="key_calculate">grade_calculation</string>
+    <string name="key_subj_name" translatable="false">subject_name</string>
+    <string name="key_subj_units" translatable="false">subject_units</string>
+    <string name="key_subj_grade" translatable="false">subject_grade</string>
+    <string name="key_total_subjects" translatable="false">total_subjects</string>
+    <string name="key_total_gwa" translatable="false">total_gwa</string>
+    <string name="key_result" translatable="false">result_bundle</string>
+    <string name="key_calculate" translatable="false">grade_calculation</string>
+
     <string name="main_menu_conversion">Grade Conv. Table</string>
     <string name="conversion_toolbar_title">Grade Conversion Table</string>
     <string name="about_toolbar_title">About Finals Project</string>
     <string name="result_toolbar_title">Your Result</string>
-    <string name="current_general_weighted_average">Current General Weighted Average:</string>
-    <string name="_0_00">0.00</string>
+
     <string name="you_are_doing_great">You are doing great!</string>
     <string name="excelsior">EXCELSIOR</string>
     <string name="bisnan_aerhiel_dhenhice">Bisnan, Aerhiel Dhenhice</string>
@@ -19,4 +23,22 @@
     <string name="lacbain_jannel">Lacbain, Jannel</string>
     <string name="bonus_roland_val_tristan">Bonus, Roland Val Tristan</string>
     <string name="group_icon">group icon</string>
+
+    <string name="main_img_view_desc">Clipart image of a student</string>
+    <string name="main_welcome_msg">Welcome, Tamaraws!</string>
+    <string name="main_action_msg">What would you like to do today?</string>
+    <string name="main_btn_compute">Compute GWA</string>
+    <string name="main_btn_conversion">Conversion Table</string>
+    <string name="list_add_action_btn">Add Subject</string>
+    <string name="conversion_menu_calculate">Calculate GWA</string>
+    <string name="subject_name_field_hint">Subject Name</string>
+    <string name="subject_units_field_hint">Subject Units</string>
+    <string name="subject_grade_field">Subject Grade</string>
+    <string name="dialog_add_subject">Add Subject</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="field_empty_error">Field must not be empty</string>
+    <string name="dialog_delete">Delete Subject</string>
+    <string name="dialog_edit_subject">Edit Subject</string>
+    <string name="tv_result_subject_header">With %d subjects, your GWA is:</string>
+    <string name="tv_result_gwa">%.02f</string>
 </resources>

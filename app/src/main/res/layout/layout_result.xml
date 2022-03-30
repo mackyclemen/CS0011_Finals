@@ -5,49 +5,58 @@
     android:id="@+id/GWAlabel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_light_background"
     android:paddingHorizontal="@dimen/padding_horizontal"
     android:paddingVertical="@dimen/padding_vertical"
-    android:textAlignment="center"
     tools:context=".ResultActivity"
-    tools:showIn="@layout/activity_result">
+    tools:showIn="@layout/activity_result"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" >
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="257dp"
-        android:layout_height="75dp"
-        android:lineSpacingExtra="8sp"
-        android:text="@string/current_general_weighted_average"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/main_img_view_desc"
+        android:src="@drawable/students"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintBottom_toTopOf="@id/tv_result_subject_header"/>
 
-    <TextView
-        android:id="@+id/GWAValue"
+    <TextView android:id="@+id/tv_result_subject_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="288dp"
-        android:text="@string/_0_00"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/tv_result_gwa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_img"
+        tools:text="@string/tv_result_subject_header"
+        style="@style/TextAppearance.Material3.BodyLarge" />
 
+    <TextView
+        android:id="@+id/tv_result_gwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/QuoteLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_subject_header"
+        tools:text="@string/tv_result_gwa"
+        style="@style/TextAppearance.Material3.DisplaySmall" />
+  
     <TextView
         android:id="@+id/QuoteLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="428dp"
         android:text="@string/you_are_doing_great"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_result_gwa"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
