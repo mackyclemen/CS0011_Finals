@@ -42,9 +42,9 @@ class EditDialogFragment: DialogFragment(), DialogInterface.OnShowListener {
                 subjUnitsFieldLayout = view.findViewById(R.id.subject_units_field_layout)
                 subjGradeFieldLayout = view.findViewById(R.id.subject_grade_field_layout)
 
-                builder.setTitle("Edit subject")
+                builder.setTitle(R.string.dialog_edit_title)
                 builder.setView(view)
-                builder.setPositiveButton(R.string.dialog_edit_subject) { _, _ ->
+                builder.setPositiveButton(R.string.dialog_edit_subject_btn) { _, _ ->
                     val name: String = subjNameFieldLayout.editText?.text.toString()
                     val units: Int = subjUnitsFieldLayout.editText?.text.toString().toInt()
                     val grade: Double = subjGradeFieldLayout.editText?.text.toString().toDouble()
@@ -54,7 +54,7 @@ class EditDialogFragment: DialogFragment(), DialogInterface.OnShowListener {
                     editDialogActionListener.onPositiveClick(subject)
                 }
 
-                builder.setNegativeButton(R.string.dialog_delete) { _, _ ->
+                builder.setNegativeButton(R.string.dialog_delete_subject_btn) { _, _ ->
                     // Build another dialog, and ask. If positive, then send call to listener,.
                     AlertDialog.Builder(activity)
                         .setTitle("Delete Subject?")
@@ -64,7 +64,7 @@ class EditDialogFragment: DialogFragment(), DialogInterface.OnShowListener {
                         .show()
                 }
 
-                builder.setNeutralButton(R.string.dialog_cancel) { dialogInterface, _ ->
+                builder.setNeutralButton(R.string.dialog_cancel_btn) { dialogInterface, _ ->
                     editDialogActionListener.onNeutralClick()
                     dialogInterface.cancel()
                 }

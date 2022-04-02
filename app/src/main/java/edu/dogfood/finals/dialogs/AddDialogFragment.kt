@@ -40,9 +40,9 @@ class AddDialogFragment: DialogFragment() {
             subjUnitsFieldLayout = view.findViewById(R.id.subject_units_field_layout)
             subjGradeFieldLayout = view.findViewById(R.id.subject_grade_field_layout)
 
-            builder.setTitle("Add a subject")
+            builder.setTitle(R.string.dialog_add_subject)
             builder.setView(view)
-            builder.setPositiveButton(R.string.dialog_add_subject) { dialogInterface, i ->
+            builder.setPositiveButton(R.string.dialog_add_subject_btn) { dialogInterface, i ->
                 // Layout check if the EditTexts are not empty
                 if(
                     subjNameFieldLayout.editText?.text?.isNotBlank() != false ||
@@ -56,14 +56,14 @@ class AddDialogFragment: DialogFragment() {
 
                     addDialogActionListener.onPositiveClick(subject)
                 } else {
-                    Toast.makeText(requireActivity().baseContext, "All fields are required", Toast.LENGTH_LONG)
+                    Toast.makeText(requireActivity().baseContext, R.string.add_dialog_all_fields_required_toast, Toast.LENGTH_LONG)
                         .show()
 
                     dialogInterface.dismiss()
                 }
             }
 
-            builder.setNegativeButton(R.string.dialog_cancel) { _, _ ->
+            builder.setNegativeButton(R.string.dialog_cancel_btn) { _, _ ->
                 addDialogActionListener.onNegativeClick()
             }
 

@@ -27,9 +27,8 @@ class MainActivity : AppCompatActivity() {
         // Conversion Table button
         val actionShowConversionBtn: Button = findViewById(R.id.main_btn_conversion)
         actionShowConversionBtn.setOnClickListener {
-            // TODO Link the table activity to this button
-            // val intent = Intent(this, ConversionActivity::class.java)
-            // startActivity(intent)
+             val intent = Intent(this, TableActivity::class.java)
+             startActivity(intent)
         }
     }
 

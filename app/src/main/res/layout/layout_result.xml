@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@id/QuoteLabel"
+        app:layout_constraintBottom_toTopOf="@id/tv_quote_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result_subject_header"
@@ -49,14 +49,14 @@
         style="@style/TextAppearance.Material3.DisplaySmall" />
   
     <TextView
-        android:id="@+id/QuoteLabel"
+        android:id="@+id/tv_quote_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/you_are_doing_great"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_result_gwa"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/you_are_doing_great" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

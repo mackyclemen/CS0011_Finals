@@ -1,4 +1,4 @@
-package edu.dogfood.finals.conversion
+package edu.dogfood.finals.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -60,8 +60,8 @@ class ConversionAdapter(private val dataSet: List<Subject>,
             VIEWTYPE_ITEM -> {
                 val _item = holder as ItemViewHolder
                 _item.subjectName.text = dataSet[position].name
-                _item.subjectUnits.text = String.format("Subject Units: %d", dataSet[position].units)
-                _item.subjectGrade.text = String.format("Grade: %.02f", dataSet[position].grade)
+                _item.subjectUnits.text = String.format(holder.itemView.context.getString(R.string.subject_units_text_placeholder), dataSet[position].units)
+                _item.subjectGrade.text = String.format(holder.itemView.context.getString(R.string.subject_grade_text_placeholder), dataSet[position].grade)
                 _item.itemView.setOnClickListener {
                     onSelectionListener.onItemSelected(position)
                 }

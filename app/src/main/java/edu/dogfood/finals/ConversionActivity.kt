@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import edu.dogfood.finals.conversion.ConversionAdapter
+import edu.dogfood.finals.adapter.ConversionAdapter
 import edu.dogfood.finals.data.Subject
 import edu.dogfood.finals.dialogs.AddDialogFragment
 import edu.dogfood.finals.dialogs.EditDialogFragment
@@ -58,7 +58,7 @@ class ConversionActivity : AppCompatActivity(), View.OnClickListener, Conversion
 
                     // Create a bundle to pass to the ResultActivity
                     val args = Bundle()
-                    args.putInt(resources.getString(R.string.key_total_subjects), listOfGrades.size)
+                    args.putInt(resources.getString(R.string.key_total_units), units)
                     args.putDouble(resources.getString(R.string.key_total_gwa), gwa)
 
                     // Initialize an intent
@@ -69,10 +69,16 @@ class ConversionActivity : AppCompatActivity(), View.OnClickListener, Conversion
                     startActivity(intent)
                 }
 
-                true
+                /*return*/ true
             }
 
-            else -> false
+            R.id.conversion_menu_about -> {
+                val aboutIntent = Intent(this, AboutActivity::class.java)
+                startActivity(aboutIntent)
+                /*return*/ true
+            }
+
+            else -> /*return*/ false
         }
     }
 
