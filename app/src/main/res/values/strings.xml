@@ -1,19 +1,27 @@
 <resources>
-    <string name="app_name">Finals Project</string>
+    <string name="app_name">TamGWA Calculator</string>
     <string name="main_menu_about">About</string>
 
     <string name="key_subj_name" translatable="false">subject_name</string>
     <string name="key_subj_units" translatable="false">subject_units</string>
     <string name="key_subj_grade" translatable="false">subject_grade</string>
-    <string name="key_total_subjects" translatable="false">total_subjects</string>
+    <string name="key_total_units" translatable="false">total_units</string>
     <string name="key_total_gwa" translatable="false">total_gwa</string>
     <string name="key_result" translatable="false">result_bundle</string>
-    <string name="key_calculate" translatable="false">grade_calculation</string>
 
-    <string name="main_menu_conversion">Grade Conv. Table</string>
-    <string name="conversion_toolbar_title">Grade Conversion Table</string>
-    <string name="about_toolbar_title">About Finals Project</string>
+    <string name="conversion_toolbar_title">Subject List</string>
+    <string name="about_toolbar_title">About %s</string>
     <string name="result_toolbar_title">Your Result</string>
+
+    <string name="you_are_doing_great">You are doing great!</string>
+    <string name="group_name">EXCELSIOR</string>
+    <string name="member1">Bisnan, Aerhiel Dhenhice</string>
+    <string name="member3">Clemen, Marc Steven</string>
+    <string name="member4">Ignacio, Janah Reginna</string>
+    <string name="member5">Lacbain, Jannel</string>
+    <string name="member2">Bonus, Roland Val Tristan</string>
+    <string name="group_icon">group icon</string>
+
     <string name="main_img_view_desc">Clipart image of a student</string>
     <string name="main_welcome_msg">Welcome, Tamaraws!</string>
     <string name="main_action_msg">What would you like to do today?</string>
@@ -25,10 +33,24 @@
     <string name="subject_units_field_hint">Subject Units</string>
     <string name="subject_grade_field">Subject Grade</string>
     <string name="dialog_add_subject">Add Subject</string>
-    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_add_subject_btn">Add Subject</string>
+    <string name="dialog_cancel_btn">Cancel</string>
     <string name="field_empty_error">Field must not be empty</string>
-    <string name="dialog_delete">Delete Subject</string>
-    <string name="dialog_edit_subject">Edit Subject</string>
-    <string name="tv_result_subject_header">With %d subjects, your GWA is:</string>
+    <string name="dialog_delete_subject_btn">Delete Subject</string>
+    <string name="dialog_edit_subject_btn">Update Subject</string>
+    <string name="tv_result_subject_header">With %d units, your GWA is:</string>
     <string name="tv_result_gwa">%.02f</string>
+    <string name="table_toolbar_title">Conversion Table</string>
+    <string name="grade_raw">Raw Score</string>
+    <string name="grade_point">Grade Point</string>
+    <string name="grade_description">Description:</string>
+    <string name="add_dialog_all_fields_required_toast">All fields are required</string>
+    <string name="dialog_edit_title">Edit subject</string>
+    <string name="subject_units_text_placeholder">Subject Units: %d</string>
+    <string name="subject_grade_text_placeholder">Grade: %.02f</string>
+    <string name="feedback_grade_range_excellent">Outstanding Performance!</string>
+    <string name="feedback_grade_range_great">Great Job!</string>
+    <string name="feedback_grade_range_good">Good Work!</string>
+    <string name="feedback_grade_range_nice">Nice!</string>
+    <string name="feedback_grade_range_ok">You can do it!</string>
 </resources>

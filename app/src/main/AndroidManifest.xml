@@ -10,47 +10,65 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalsProject">
         <activity
+            android:name=".TableActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+            <!--
+            set on portrait for now to avoid some bugs related to lifecycles.
+            will fix after submission, as we implement View Binding.
+            -->
+
+        <activity
             android:name=".ConversionActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-            <!-- set on portrait for now to avoid some bugs related to lifecycles.
-            will fix after submission, as we implement View Binding. -->
+            <!--
+            set on portrait for now to avoid some bugs related to lifecycles.
+            will fix after submission, as we implement View Binding.
+            -->
 
         <activity
             android:name=".AboutActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" >
-            <!-- set on portrait for now to avoid some bugs related to lifecycles.
-            will fix after submission, as we implement View Binding. -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+            android:screenOrientation="portrait" />
+            <!--
+            set on portrait for now to avoid some bugs related to lifecycles.
+            will fix after submission, as we implement View Binding.
+            -->
 
         <activity
             android:name=".ResultActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" >
-            <!-- set on portrait for now to avoid some bugs related to lifecycles.
-            will fix after submission, as we implement View Binding. -->
+            android:screenOrientation="portrait">
+            <!--
+            set on portrait for now to avoid some bugs related to lifecycles.
+            will fix after submission, as we implement View Binding.
+            -->
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".ConversionActivity" />
+
         </activity>
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-            <!-- set on portrait for now to avoid some bugs related to lifecycles.
-            will fix after submission, as we implement View Binding. -->
+            android:screenOrientation="portrait">
+            <!--
+            set on portrait for now to avoid some bugs related to lifecycles.
+            will fix after submission, as we implement View Binding.
+            -->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
+
 </manifest>

@@ -5,4 +5,8 @@
         android:icon="@drawable/ic_outline_calculate_24"
         android:title="@string/conversion_menu_calculate"
         app:showAsAction="always" />
+    <item android:id="@+id/conversion_menu_about"
+        android:icon="@drawable/ic_outline_info_24"
+        android:title="@string/main_menu_about"
+        app:showAsAction="never" />
 </menu>
